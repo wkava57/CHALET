@@ -1,0 +1,375 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header{
+    margin-bottom: 50px;   
+    height: 500px;    
+}
+header h1{
+    text-align: center;
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 50px;    
+}
+#test{
+    z-index: -100;
+    position: absolute; 
+    overflow:hidden;
+    display:block;    
+    height: 500px; 
+    margin:0 auto;    
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+header ul{
+    height: 350px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;    
+}
+.photo{
+    border-radius: 50%;   
+}
+.lien img{
+    box-shadow: 10px 5px 5px rgb(43, 2, 2);
+    justify-content: space-between;
+    margin: 0 80px 0 80px;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;    
+}
+#para1{
+    background: url(montagne.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* ------------------------------------------- */
+
+.block{
+    display: flex;
+    height: 500px;
+    width: 100%;  
+    justify-content: center;
+    align-items: center;    
+}
+
+.accordeon{
+    width: 500px;
+    
+}
+.carous{
+   width: 500px;
+   
+}
+li .video{
+    font-weight: bold;
+    color: rgb(241, 248, 243);    
+}
+
+.carousel-caption{
+   
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+    text-shadow: 0px 0px 10px blue;
+}
+/* --------------------------------------------------- */
+.para2{
+    background: url(./montagne\ para2.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.block2 img{
+    border-radius: 10px;
+    border-style: hidden;
+
+}
+.block21{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./fondBois.jpg);
+}
+.block21 h2{
+    color: white;
+}
+
+.chaletBois h3{
+    display: flex;    
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    color: brown;
+    height: 100px;
+
+}
+
+.txt-rondin{   
+    height: 250px; 
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+}
+.txt-madrier{
+    line-height: 2;
+    text-align: justify;
+    align-items: center;
+}
+.txt-jardin{
+    text-align: justify;
+    align-items: center;
+    line-height: 2;
+}
+.tdc{
+    margin: 50px 0;
+    width: 100%;
+    padding: 0 15%;    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.rondin{
+    margin: 50px;    
+}
+.madrier{
+    margin: 50px;
+}
+.jardin{
+    margin: 50px;    
+}
+.txt{
+    padding: 0 0 0 50px;
+}
+.titre h2{
+    margin: 100px;
+    text-align: center;
+}
+.vlc{
+    margin-left: 100px;
+    height: 500px;
+    align-items: center;
+    
+}
+.txt-vlc{
+    height: 360px;
+    vertical-align: middle;
+    line-height: 2;   
+}
+.film2{
+    
+    padding: 50px;
+}
+.film3 video{    
+    border: 1px gray solid;    
+}
+footer{    
+    background-image: url(./fire.jpg);
+    background-repeat: no-repeat;
+}
+.pp{
+    width: 100%;
+    margin: 30px 0 30px 30px;
+    display: flex;
+    justify-content: center;
+     
+   
+}
+footer h3{
+    color: red;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    margin-top: 50px;
+    text-align: center;
+}
+.info li{
+    color: yellow;
+    margin: 20px 0;
+}
+.contact img{
+    box-shadow: 10px 5px 5px rgb(26, 2, 2);
+    justify-content: space-between;
+    margin: 0 80px 0 80px;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+.contact1{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.contact2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+/*----------------------------------------------------------------- */
+@media(max-width:768px){
+    header{
+        height: auto;
+    }
+    .logo{
+        height: 90%;
+        width: 90%;
+    }
+    #test{
+    height: auto;
+    }
+
+    .lien ul{
+        width: 100%; 
+        height: 70%;       
+        justify-content: center;                
+    }
+}
+/* ------------------------------------------------------------------ */
+@media(max-width:768px){
+    main{
+        height: 100%;
+        width: 90%;        
+    }
+    .accordion{
+        width: 600px;
+        justify-content: center;
+        margin: 80px;
+    }
+    .carous img{
+        width: auto;
+        height: auto;
+        margin-left: 50px;
+    }
+}
+/* ------------------------------------------------------------------------ */
+@media(max-width:768px){
+    .block2{
+        width: 90%;
+    }
+    
+    h2{
+        text-align: center;
+        width: 90%;
+    }
+    .tdc{
+        width: 90%;
+        text-align: justify;
+        margin: 50px 0;   
+    }
+    .rondin{
+        height: 500px;
+    }
+    .rondin1{
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+    .txt-rondin{
+        width: auto;
+        text-align: justify;
+        margin: 50px 0;
+        line-height: none;
+    }
+    .madrier1{
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+    .txt-madrier{
+        width: auto;
+        text-align: justify;
+        margin: 50px;
+        line-height: none;
+    }
+    .jardin1{
+        display: flex;
+        justify-content: center;
+        width: auto;
+
+    }
+    .txt-jardin{
+        width: auto;
+        text-align: justify;
+        margin: 50px;
+        line-height: none;
+    } 
+}
+/* ------------------------------------------------------------- */
+@media(max-width:768px){
+    .video h2{
+        width: auto;
+    }
+    .txt-vlc{
+        width: 90%;
+        text-align: justify;
+        margin: 50px;
+    }
+    .film1{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .film2{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .txt-vlc{
+        width: 90%;
+        height: 150px;
+        text-align: justify;
+        margin: 50px;
+    }
+    .txt-vlc2{
+        width: 90%;
+        text-align: justify;
+        margin: 50px;
+    }
+    .txt-vlc3{
+        width: 90%;
+        text-align: justify;
+        margin: 50px;
+    }    
+    .film3{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+}
+/* ---------------------------------------------------------------------- */
+@media(max-width:768px){
+    footer{
+       
+        width: 90%;
+    }
+    .pp{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .info{
+        margin: 50px 0 0 0;
+    }
+    .info ul{
+        margin: 50px 0 0 0;
+        justify-content: center;
+    }
+    .contact{
+        margin: 50px 0;
+    }
+}
+
