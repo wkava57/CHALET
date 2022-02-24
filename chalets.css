@@ -8,7 +8,8 @@ body{
 
 header{
     margin-bottom: 50px;   
-    height: 500px;    
+    height: 600px;   
+    width: 100%; 
 }
 header h1{
     text-align: center;
@@ -17,68 +18,68 @@ header h1{
     height: 50px;    
 }
 #test{
+    width: 100%;
     z-index: -100;
     position: absolute; 
     overflow:hidden;
     display:block;    
-    height: 500px; 
+    height: 600px; 
     margin:0 auto;    
+    background-attachment: fixed;
 }
 .logo img{
-    width: 100px;
-    height: 100px;
+    width: 10%;
+    height: 10%;
+    
 }
-header ul{
-    height: 350px;
+.lien ul{
+    margin-top: 23vh;
+    height: 250px;
     width: 100%;
     text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;    
 }
-.photo{
-    border-radius: 50%;   
-}
+
 .lien img{
     box-shadow: 10px 5px 5px rgb(43, 2, 2);
     justify-content: space-between;
     margin: 0 80px 0 80px;
     border-radius: 50%;
-    height: 90px;
-    width: 90px;    
+    height: 20%;
+    width: 20%;    
 }
-#para1{
-    background: url(montagne.jpg);
-    width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-attachment: fixed;
-}
-/* ------------------------------------------- */
 
-.block{
+/* ------------------------------------------- */
+#para1{
+    background: url(./montagne\ para1.jpg);
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+.block{   
     display: flex;
     height: 500px;
-    width: 100%;  
-    justify-content: center;
-    align-items: center;    
+    width: 100%;          
 }
-
 .accordeon{
+    margin-left: 10vw;
     width: 600px;
     height: 400px;
 }
 .carous{
-   width: 600px;
-   height: 400px;
-
-   
+    
+    margin-left: 10vw;
+    width: 600px;
+    height: 400px;   
 }
 li .video{
     font-weight: bold;
     color: rgb(241, 248, 243);    
 }
-
 .carousel-caption{
    
     background-color: rgba(0, 0, 0, 0.39);
@@ -101,10 +102,6 @@ li .video{
     align-items: center;
     font-weight: bold;
     font-size: 500%;
-}
-.block2{
-    height: 1300px;   
-
 }
 .block2 img{
     border-radius: 10px;
@@ -129,11 +126,13 @@ li .video{
     line-height: 2;
 }
 .txt-madrier{
-    line-height: 2;
+    height: 250px;
     text-align: justify;
     align-items: center;
+    line-height: 2;
 }
 .txt-jardin{
+    height: 250px;
     text-align: justify;
     align-items: center;
     line-height: 2;
@@ -158,6 +157,7 @@ li .video{
 .txt{
     padding: 0 0 0 50px;
 }
+/* -------------------------- ------------------------------------*/
 .para3{
     background: url(./montagne\ para3.jpg);
     width: 100%;
@@ -167,47 +167,51 @@ li .video{
     color: rgb(117, 22, 22);
     margin-bottom: 50px;
 }
-.para3 h2{
+.para3 h1{
     height: 400px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 300%;
-    font-weight: bold;
-    
+    font-weight: bold;    
+}
+.video h3{
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: brown;
 }
 .vlc{
     margin-left: 50px;
-    height: 500px;
-    align-items: center;
-    
+    height: 400px;    
 }
-.vlc2{
-    
+.vlc2{    
     margin-left: 50px;
-    height: 400px;
-    
-    
+    height: 400px;    
 }
 .vlc3{
     margin-left: 50px;
-    height: 500px;
-    align-items: center;
-    
+    height: 400px;    
 }
-.txt-vlc{
-    height: 360px;
-    vertical-align: middle;
-    line-height: 2.5;   
-}
-.txt-vlc2{
+.vlc p{
     height: 360px;
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 2.5;   
+    line-height: 2.9;   
 }
-.txt-vlc3{
+.vlc2 p{
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.9;   
+}
+.vlc3 p{
     height: 360px;
     display: flex;
     align-items: center;
@@ -218,17 +222,26 @@ li .video{
     border: 1px gray solid;    
 }
 .lien-haut li{
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.lien-haut p{
+.lien-haut p{ 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-footer{    
-    background-image: url(./fire.jpg);
+
+.fond img{
+    width: 100%;
+    height: 1000px;
+    z-index: -100;
+    position: absolute; 
+    overflow:hidden;
+    display:block;         
+    margin:0 auto;    
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 .pp{
@@ -252,7 +265,7 @@ ul{
     color: yellow;
     margin: 20px 0;
 }
-.contact img{
+.contacts img{
     box-shadow: 10px 5px 5px rgb(26, 2, 2);
     justify-content: space-between;
     margin: 0 80px 0 80px;
@@ -274,139 +287,221 @@ ul{
 @media(max-width:768px){
     header{
         height: auto;
+        width: auto;
+        margin: 0;
     }
     .logo{
-        height: 90%;
-        width: 90%;
+        height: 70%;
+        width: 70%;
     }
     #test{
     height: auto;
     }
 
+
     .lien ul{
-        width: 100%; 
-        height: 70%;       
+        
+        width: 100%;
+        height: auto;       
         justify-content: center;                
     }
+    .photo{
+        width: 50%;
+        height: 50%;
+    }
+
 }
 /* ------------------------------------------------------------------ */
-@media(max-width:768px){
+@media(max-width:576px){
     main{
-        height: 100%;
-        width: 90%;        
-    }
-    .accordion{
-        width: 600px;
-        justify-content: center;
-        margin: 80px;
-    }
-    .carous img{
-        width: auto;
         height: auto;
-        margin-left: 50px;
+        width: auto;        
     }
-}
-/* ------------------------------------------------------------------------ */
-@media(max-width:768px){
-    .block2{
-        width: 90%;
+    ul{
+        max-height: 250px;
+    }
+    #para1{
+        width: 100%;
+        height: 200px;        
+    }
+    .block{
+        display: flex;
+        width: 100%;
+    }
+    .accordeon{
+        width: 80%;
+        height: auto;
+        margin-bottom: 50px;       
+    }
+    .accordion-button{
+        width: 100%;
+        height: auto;
+    }
+    .carous{
+        width: 80%;
+        height: auto;
+        margin-bottom: 50px;
     }
     
-    h2{
-        text-align: center;
-        width: 90%;
+}
+/* ------------------------------------------------------------------------ */
+@media(max-width:576px){
+    .para2{
+        width: 100%;
+        height: 200px;
     }
+    .para2 h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 100%;
+        font-size: 200%;
+        font-weight: bold;
+    }
+    .block2{
+        width: 100%;
+        height: auto;
+    }   
     .tdc{
-        width: 90%;
+        width: 100%;
+        height: auto;
         text-align: justify;
-        margin: 50px 0;   
+        margin: 20px 0;   
     }
     .rondin{
-        height: 500px;
+        margin: 0;
+        height: auto;
+        width: 100%;
     }
     .rondin1{
+        margin: 0;
         display: flex;
+        align-items: center;
         justify-content: center;
-        width: auto;
+        width: 100%;
+        height: auto;
     }
     .txt-rondin{
-        width: auto;
-        text-align: justify;
-        margin: 50px 0;
+        margin: 0;
+        width: 100%;
+        height: auto;       
         line-height: none;
+    }
+    .madrier{
+        margin: 0;
+        height: auto;
+        width: 100%;
     }
     .madrier1{
+        margin: 0;
         display: flex;
         justify-content: center;
-        width: auto;
+        align-items: center;
+        height: auto;
+        width: 100%;
     }
     .txt-madrier{
-        width: auto;
-        text-align: justify;
-        margin: 50px;
+        margin:0;
+        width: 100%;
+        height: auto;     
         line-height: none;
     }
+    .jardin{
+        margin: 0;
+        height: auto;
+        width: 100%;
+    }
     .jardin1{
+        margin: 0;
         display: flex;
         justify-content: center;
-        width: auto;
+        align-items: center;
+        height: auto;
+        width: 100%;
 
     }
     .txt-jardin{
-        width: auto;
-        text-align: justify;
-        margin: 50px;
+        margin:0;
+        height: auto;
+        width: 100%;        
         line-height: none;
     } 
 }
 /* ------------------------------------------------------------- */
-@media(max-width:768px){
-    .video h2{
-        width: auto;
+@media(max-width:576px){
+    .para3{
+        margin: 0;
+        width: 100%;
+        height: 200px;
     }
-    .txt-vlc{
-        width: 90%;
+    .para3 h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        height: 200px;
+        width: 100%;
+        font-size: 150%;
+        font-weight: bold;
+    }
+    .video{
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .video h3{
+        width: 100%;
+        height: auto;
+    }
+    .vlc{
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .vlc p{
+        height: auto;
+        width: 100%;        
+        margin: 0;                
+        line-height: none;
+    }
+    .film1{
+        width: auto;        
         text-align: justify;
         margin: 50px;
     }
-    .film1{
-        width: 90%;
-        display: flex;
-        justify-content: center;
-    }
     .film2{
-        width: 90%;
+        width: auto;
         display: flex;
         justify-content: center;
     }
     .txt-vlc{
-        width: 90%;
+        width: auto;
         height: 150px;
         text-align: justify;
         margin: 50px;
     }
     .txt-vlc2{
-        width: 90%;
+        width: auto;
         text-align: justify;
         margin: 50px;
     }
     .txt-vlc3{
-        width: 90%;
+        width: auto;
         text-align: justify;
         margin: 50px;
     }    
     .film3{
-        width: 90%;
+        width: auto;
         display: flex;
         justify-content: center;
     }
 }
 /* ---------------------------------------------------------------------- */
-@media(max-width:768px){
+@media(max-width:576px){
     footer{
-        margin: 0 auto;
         height: auto;
-        width: 90%;
+        width: auto;
     }
     .pp{
         height: auto;
